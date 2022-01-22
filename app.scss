@@ -9,7 +9,7 @@ $magenta: hsl(300, 69%, 71%);
   box-sizing: border-box;
 }
 
-// Screen is bigger than 600px
+// Screen is bigger than 800px
 @media only screen and (min-width: 800px) {
   body {
     height: 98vh;
@@ -52,11 +52,12 @@ $magenta: hsl(300, 69%, 71%);
 
   .hero {
     img {
-      height: 700px;
+      height: 100%;
     }
   }
 
   .info {
+    border: 1px solid red;
     width: 30%;
     height: 60%;
     margin-left: 2rem;
@@ -85,6 +86,45 @@ $magenta: hsl(300, 69%, 71%);
   footer {
     grid-column: 1 / -1;
   }
+}
+
+.icons {
+  text-align: center;
+  padding: 2rem;
+  float: right;
+
+  i:hover {
+    color: $magenta;
+    border: 1px solid $magenta;
+    cursor: pointer;
+  }
+}
+
+.fa-facebook-f {
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px 14px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-twitter {
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px 10px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-instagram {
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 10px 12px;
+  border: 1px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
 }
 
 // Screen is smaller than 600px
@@ -161,42 +201,8 @@ $magenta: hsl(300, 69%, 71%);
   footer {
     grid-column: 1 / -1;
   }
-}
 
-.icons {
-  text-align: center;
-  padding: 2rem;
-
-  i:hover {
-    color: $magenta;
-    border: 1px solid $magenta;
-    cursor: pointer;
+  .icons {
+    float: none;
   }
-}
-
-.fa-facebook-f {
-  font-size: 20px;
-  margin: 0 10px;
-  padding: 10px 14px;
-  border: 1px solid white;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-}
-
-.fa-twitter {
-  font-size: 20px;
-  margin: 0 10px;
-  padding: 10px 10px;
-  border: 1px solid white;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
-}
-
-.fa-instagram {
-  font-size: 20px;
-  margin: 0 10px;
-  padding: 10px 12px;
-  border: 1px solid white;
-  border-radius: 50%;
-  transition: all 0.2s ease-in-out;
 }
